@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta name="title" content="Titelzeile im Meta Tag">
+	<meta name="author" content="Die Webagentur">
+	<meta name="description" content="Eine kurze Beschreibung der Webpage.">
+	<meta name="abstract" content="Eine kurze Beschreibung der Webpage. ">
+	<meta name="date" content="Das Datum der Online Stellung">
+	<meta name="keywords" lang="de" content="Maximal 13, durch Komma getrennte, Schlüsselbegriffe, die den Inhalt der Webpage beschreiben">
+
+	<title>Skills</title>
+	<meta charset="utf-8">	
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
+    </script>      	
+</head>
+
+<body>
+    <div id= "main">
+        <div id="nav">
+            <div class = "navbar">
+                <a href="mainpage.html">About</a>   
+            </div>
+                
+                    <div class = "navbar">
+                        <a href="Skills.html">Skills</a>   
+                        </div>
+                    <div class = "navbar">
+                        <a href="contact.html">Contact</a>   
+                        </div>   
+        </div> 
+        <div class="name"> 
+        <h1>Skills</h1>   
+    </div>
+
+    
+                 
+    
+                              
+<div class="skills">
+    
+        <div class="skill">
+            <div class="container">
+            <div class="fonticon" ><i class="fab fa-html5"></i></div>
+            <div class="skill-name"><h2>HTML</h2></div>
+            </div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90"></div>
+                </div>
+            </div>
+            
+            <div class="skill">
+                <div class="container">
+                    <div class="fonticon" ><i class="fab fa-html5"></i></div>
+                <div class="skill-name"><i class="fab fa-css3-alt"></i><h2>CSS</h2></div>
+            </div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80"></div>
+                    </div>
+                </div>
+                
+            <div class="skill">
+                <div class="container">
+                    <div class="fonticon" ><i class="fab fa-js-square"></i></div>
+                <div class="skill-name"><h2>Javascript</h2></div>
+                </div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="55"></div>
+                    </div>
+                    
+                </div>
+                
+                <div class="skill">
+                    <div class="container">
+                    <div class="fonticon" ><i class="fab fa-php"></i></div>
+                    <div class="skill-name"><h2>PHP & MySQL</h2></div>
+                </div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill">
+                        <div class="container">
+                            <div class="fonticon" ><i class="fab fa-google"></i></i></div>
+                            <div class="skill-name"><h2>SEO</h2></div>
+                        </div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="80"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="container">
+                                <div class="fonticon" ><i class="fas fa-shopping-cart"></i></div>
+                                <div class="skill-name"><h2>Affiliate Marketing</h2></div>
+                            </div>
+                            
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="85"></div>
+                                </div>
+                            </div>
+
+                        </div> 
+
+                        <div class="sprache">
+                            <div class="lang"> <h1>Languages</h1></div>
+                            <div class="test">
+                                <div class="animated-text">      
+                                    <div class="line">German</div>
+                                    <div class="line"><img src="five.png" width="95%" height="50px" alt=></i></div>
+                                    <div class="line">English</div>
+                                    <div class="line"><img src="five.png" width="95%" height="50px" alt=></div>
+                                    <div class="line">Spanish</div>
+                                    <div class="line"><img src="one.png" width="95%" height="50px" alt=></div>
+                                </div>
+                                    
+                        </div>
+                        </div>
+                    <script>
+                     $('.skill-per').each(function(){
+                         var $this = $(this);
+                         var per = $this.attr('per');
+                         $this.css("width",per+'%');
+                         $({animatedValue: 0}).animate({animatedValue: per},{
+                            duration: 1000,
+                            step: function(){
+                                $this.attr('per', Math.floor(this.animatedValue) );
+                            },
+                            complete: function(){
+                                $this.attr('per',Math.floor(this.animatedValue) + '%');
+                            }
+                        });
+                     });
+
+                    </script>
+</div>
+</div>
+
+    
+
+
+
+
+</body>
+
+</html>
